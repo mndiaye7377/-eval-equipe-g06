@@ -1,7 +1,11 @@
 package EvalG06;
 
-public class compteStandard extends Compte{
+public class CompteStandard extends Compte{
 
+  public CompteStandard(String numero,String titulaire){
+    super(numero,titulaire);
+  }
+  
   @override
   public long frais(long montant){
     montant × TAUX_FRAIS / 1000;
