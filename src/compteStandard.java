@@ -1,5 +1,6 @@
 package EvalG06;
 
-public class compteStandard {
+public class compteStandard extends Compte{
+  
 
 }
