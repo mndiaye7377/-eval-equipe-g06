@@ -7,7 +7,7 @@ public class ComptePremium extends CompteStandard{
   }
   @override
   public long frais(long montant){
-    if (montant ≤ SEUIL_PREMIUM){
+    if (montant <= SEUIL_PREMIUM){
       return 0;
     else{ 
         frais standard / 2;
