@@ -55,6 +55,11 @@ public abstract class Compte {
     // À compléter :
     // 1. retirer(long montant)
     // 2. toString()
+    public String toString(){
+        
+        return type()+" "+numero+" "+titulaire+" "+solde+" FCFA";
+        
+    }
     // 3. equals(Object obj)
     // 4. hashCode()
 }
