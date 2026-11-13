@@ -38,6 +38,13 @@ public abstract class Compte {
         solde += montant;
         return true;
     }
+    public boolean retirer(long montant){
+        if (montant <= 0) {
+            return false;
+        }
+        solde -= montant;
+        return true;
+    }
 
     public abstract long frais(long montant);
 
