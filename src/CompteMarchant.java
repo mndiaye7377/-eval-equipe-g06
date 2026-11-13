@@ -21,4 +21,9 @@ public class CompteMarchant Compte{
     return 5*super.plafond();
   }
 
+  @override
+  public String type(){
+    return "MAR";
+  }
+
 }
