@@ -26,4 +26,9 @@ public class CompteMarchant Compte{
     return "MAR";
   }
 
+  @override
+  public String toString(){
+    super.toString()+" ("+enseigne+")";
+  }
+
 }
