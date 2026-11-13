@@ -39,10 +39,10 @@ public abstract class Compte {
         return true;
     }
     public boolean retirer(long montant){
-        if (montant <= 0) {
+        if (montant <= 0 || montant > plafond() || montant + frais(montant) > solde) {
             return false;
         }
-        solde -= montant;
+        solde -= montant+frais(montant);
         return true;
     }
 
